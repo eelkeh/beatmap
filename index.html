@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BEATMAP</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link type="text/css" rel="stylesheet" href="./reset.css"/>
+<link type="text/css" href="packages/jquery-ui-1.8.18.custom.css" rel="stylesheet" /> 
+<link type="text/css" rel="stylesheet" href="./styles.css"/>
+<script type="text/javascript" src="packages/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="packages/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="packages/jquery.qtip-1.0.0-rc3.min.js"></script>
+<script type="text/javascript" src="./d3.js"></script>
+<script type="text/javascript" src="./autocomplete.js"></script>
+<script type="text/javascript" src="./bubble-graph.js"></script>
+<script type="text/javascript" src="./forced-graph.js"></script>
+
+</head>
+<body>
+	
+	<div id="splash">	
+		<div class="content">
+			<img class="splash-logo" src="images/logo-for-splash.png"/>
+			<img class="underneath" src="images/under-the-logo.png"/>
+			<div class="text">
+				<p>1. Explore the genres: click, move and have fun!</p>
+
+				<p>2. Drag your favourite genres to the turntable -up to three.</p>
+
+				<p>3. Use the tabs for switching between visualizations.</p> 
+
+				<p>4. Press the <b>PLAY</b> button and see what happens!</p>
+				</div>	
+			<img class="gogogo" src="images/i-get-it-button-2.png"/>
+		</div>
+	</div>
+	
+	<div id="logo"><img src="logo.gif"/></div>
+	<div id="container">
+	<div id="year"></div>
+		
+	<div id="tabs">
+		<div class="map"></div>
+		<div class="genres"></div>
+	</div>	
+		
+		<div id="chart"></div>
+		
+		<div id="bubbles">	
+			<div id="box"></div>			
+			<div id="forced-graph"></div>	
+		</div>			
+				
+		<div id="slider"></div>
+		<img id="play" src="images/play1.png" alt="Play" onclick="playClick()" >
+		
+		<input id="search" placeholder="Search for genre"/>
+		
+		<ul id="buttons">
+			<li><img src="images/g1-hover.png"><div class="label">Rock music</div></li>
+			<li><img src="images/g2-hover.png"><div class="label">Country music</div></li>
+			<li><img src="images/g3-hover.png"><div class="label">Hip hop music</div></li>
+			<li><img src="images/g4-hover.png"><div class="label">Reggae</div></li>
+			<li><img src="images/g5-hover.png"><div class="label">Heavy metal music</div></li>
+			<li><img src="images/g6-hover.png"><div class="label">Blues</div></li>
+			<li><img src="images/g7-hover.png"><div class="label">Jazz</div></li>		
+			<li><img src="images/g8-hover.png"><div class="label">Indie rock</div></li>	
+		</ul>	
+		
+		<div id="help"><img src="images/questionmark2.png"></div>
+		
+		
+		<ul id="list">
+		</ul>
+		
+		<input type="hidden" id="project-id"/>
+
+		<audio id="sound" style="display: none;"></audio>
+	
+		<script type="text/javascript"</script>
+		function playSound() {
+			//var soundHandle = document.getElementById('sound');
+			//soundHandle.src = 'wine.mp3';
+			//soundHandle.play();
+		}	
+		</script>
+	</div> <!-- /container -->
+</body>
+</html>
